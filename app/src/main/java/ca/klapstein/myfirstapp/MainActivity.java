@@ -3,6 +3,7 @@ package ca.klapstein.myfirstapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.editText);
         String message = editText.getText().toString();
+        Log.d(TAG, "Sending message: " + message);
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
