@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public static final String EXTRA_MESSAGE = "ca.klapstein.myfirstapp.MESSAGE";
     private static final String TAG = "MainActivity";
 
     @Override
